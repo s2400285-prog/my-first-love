@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#210c25" />
+  <title>For My Julie ♡</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">J <span>♡</span> J</a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+      <span class="music-icon">♫</span> <span id="musicLabel">Play our song</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">A little universe made for you</p>
+      <h1>For my <span>Julie</span></h1>
+      <p class="hero-copy">You made an ordinary chapter of my life feel like something I will remember forever.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#letter">Open my heart <span>♡</span></a>
+        <button class="button button-glass" id="sparkleButton" type="button">Send you a little magic ✦</button>
+      </div>
+      <div class="scroll-note">SCROLL A LITTLE, MY LOVE <span>↓</span></div>
+    </section>
+
+    <section class="letter-section" id="letter">
+      <div class="section-kicker">A letter from my heart</div>
+      <article class="letter-card">
+        <div class="letter-flower">✿</div>
+        <h2>My beautiful Julie,</h2>
+        <p>My baby, I wish you could see yourself through my eyes for even a moment. Maybe then you would understand why your smile stays in my mind, why your voice feels so comforting, and why the smallest things you do can mean so much to me. You are not simply someone I love; you are someone whose presence has made my world feel softer, warmer, and more alive.</p>
+        <p>Thank you for sharing a new and meaningful experience with me. I will always appreciate the trust, closeness, and tenderness we shared. It means a lot to me that I could experience something so personal with you, and I do not take your trust for granted. I want to remember it with gratitude—not just because it was new for me, but because it was with <em>you</em>, someone who matters deeply to my heart.</p>
+        <p>I hope life gives us many more firsts: more dates, more late-night talks, more laughter over silly things, more hugs that make the world quiet for a while, more kisses, and more private, playful moments that we both genuinely want and feel safe sharing. I never want closeness to become pressure. I want us to keep choosing each other freely, communicating honestly, respecting each other's boundaries, and making memories that leave both of us feeling loved.</p>
+        <p>Julie, I love the person you are—not only the beautiful girl I get to admire, but the heart behind your smile. I want to be someone who listens when you are tired, celebrates when you are happy, comforts you when life feels heavy, and reminds you that you never have to pretend to be okay around me. You deserve patience, gentleness, loyalty, and a love that shows itself through actions, not just pretty words.</p>
+        <p>I thank God for the chance to know you. I pray that He keeps guiding us with wisdom, honesty, patience, and a love that helps us grow into better people. Whatever beautiful days are waiting for us, I hope we meet them with grateful hearts and with God at the center of our lives.</p>
+        <p class="promise">I cannot promise that every day will be perfect, my love. But I can promise to keep learning how to love you better, to respect you, to be honest with you, and to cherish the little moments we build together. If you will keep walking beside me, I want to keep making this story ours—one sweet memory at a time.</p>
+        <p class="signature">Always yours, with a grateful heart, <span>your boy ♡</span></p>
+      </article>
+    </section>
+
+    <section class="memories-section" id="memories">
+      <div class="section-kicker">Little pieces of us</div>
+      <h2>Our memories, our little galaxy</h2>
+      <p class="section-intro">Add your favorite pictures to the frames below. Every photo can hold a whole story.</p>
+      <div class="photo-grid">
+        <button class="photo-card photo-one" type="button" data-photo="images/you-and-julie-1.jpg" aria-label="Open memory photo one">
+          <img src="images/you-and-julie-1.jpg" alt="A favorite photo of you and Julie" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="photo-placeholder"><span>♡</span><b>Our favorite photo</b><small>Add you-and-julie-1.jpg</small></span>
+          <span class="photo-caption">My favorite place is beside you</span>
+        </button>
+        <button class="photo-card photo-two" type="button" data-photo="images/you-and-julie-2.jpg" aria-label="Open memory photo two">
+          <img src="images/you-and-julie-2.jpg" alt="Another favorite photo of you and Julie" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="photo-placeholder"><span>✧</span><b>A moment to keep</b><small>Add you-and-julie-2.jpg</small></span>
+          <span class="photo-caption">A memory I will always treasure</span>
+        </button>
+        <button class="photo-card photo-three" type="button" data-photo="images/you-and-julie-3.jpg" aria-label="Open memory photo three">
+          <img src="images/you-and-julie-3.jpg" alt="A sweet memory of you and Julie" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="photo-placeholder"><span>♡</span><b>Just us</b><small>Add you-and-julie-3.jpg</small></span>
+          <span class="photo-caption">The little things become everything</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-heart">♡</div>
+      <p class="section-kicker">One last thing, baby</p>
+      <h2>In every version of tomorrow,<br /><span>I hope I get to love you.</span></h2>
+      <p>Thank you for being part of my firsts, my growth, and my happiest little memories.</p>
+      <button class="button button-primary" id="loveButton" type="button">Tap for a reminder ♡</button>
+      <p class="hidden-note" id="hiddenNote" aria-live="polite">In case you forget today: you are cherished, you are appreciated, and you are so, so loved. — Yours, always trying 💗</p>
+    </section>
+  </main>
+
+  <footer>Made with all my heart for Julie <span>♡</span></footer>
+
+  <audio id="ourSong" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Memory photo viewer">
+    <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Expanded memory" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
